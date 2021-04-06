@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:paper_pixel/screen/Cat.dart';
 import 'package:paper_pixel/screen/Paybill.dart';
 import 'package:paper_pixel/screen/map.dart';
+import 'package:paper_pixel/screen/notification.dart';
 import 'package:paper_pixel/screen/uploadd.dart';
 
 class Home extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomeState extends State<Home> {
   child:   GestureDetector(onTap: (){
 
     Navigator.push(
-            context, MaterialPageRoute(builder: (_) => Cat()));
+            context, MaterialPageRoute(builder: (_) => Home()));
     },
     child:   Row(children: [
         Padding(
@@ -84,8 +85,8 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.all(8.0),
         child:   GestureDetector(onTap: (){
 
-          // Navigator.push(
-          //         context, MaterialPageRoute(builder: (_) => XDHomepage()));
+          Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => Notif()));
         },
           child:   Row(children: [
             Padding(
@@ -120,8 +121,8 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.all(8.0),
         child:   GestureDetector(onTap: (){
 
-          // Navigator.push(
-          //         context, MaterialPageRoute(builder: (_) => XDHomepage()));
+          Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => Cat()));
         },
           child:   Row(children: [
             Padding(

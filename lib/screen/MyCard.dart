@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'NewBankCard.dart';
+import 'addnewBCard.dart';
 
 class MyCard extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _MyCardState extends State<MyCard> {
       body: GestureDetector(onTap:(){
 
         Navigator.push(
-            context, MaterialPageRoute(builder: (_) => NewBankCard()));
+            context, MaterialPageRoute(builder: (_) => AddnewBCard()));
       } ,child: Image.asset('assets/Screenshot (67).png'),)
 
     ));
