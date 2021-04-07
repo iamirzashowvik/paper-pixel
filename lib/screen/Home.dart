@@ -19,7 +19,13 @@ class _HomeState extends State<Home> {
 
 
 
-      Container(color: Color(0xff19AD9E),width: MediaQuery.of(context).size.width,height:MediaQuery.of(context).size.width ,child: Center(child: CircleAvatar(radius:75 ,backgroundImage: NetworkImage('https://image.shutterstock.com/image-photo/young-confident-handsome-man-full-260nw-1416442523.jpg'),),),)
+      Container(
+        color: Color(0xff19AD9E)
+        ,width: MediaQuery.of(context).size.width,
+        height:MediaQuery.of(context).size.width ,
+        child: Center(child: CircleAvatar(
+          radius:75 ,backgroundImage:
+        AssetImage('assets/positive-confident-young-caucasian-male-office-worker-wearing-white-formal-shirt-classic-trousers-with-belt-having-happy-facial-expression-keeping-hands-pockets-smiling-joyfully_343059-4600.jpg'),),),)
 ,  Padding(
   padding: const EdgeInsets.all(8.0),
   child:   GestureDetector(onTap: (){
